@@ -117,8 +117,8 @@
           </div>
         </div>
         <!-- TODO: Fix Address -->
+        <label for="menteeResidentialAddress" class="h4 lead">Residential Address:</label><br>
         <div class="form-row my-3">
-          <!-- <label for="menteeResidentialAddress">Residential Address:</label><br> -->
           <div class="col-md-6 col-lg-4 col-xl-3">
             <label for="menteeResidentialState">State:</label>
             <input class="form-control" type="text" id="menteeResidentialState" placeholder="Select State" required>
@@ -137,8 +137,8 @@
             <input class="form-control" type="text" id="menteeResidentialVillage" placeholder="Select Village" required>
           </div>
         </div>
+        <label for="menteePermanentAddress" class="h4 lead">Permanent Address:</label><br>
         <div class="form-row my-3">
-          <!-- <label for="menteePermanentAddress">Permanent Address:</label><br> -->
           <div class="col-md-6 col-lg-4 col-xl-3">
             <label for="menteePermanentState">State:</label>
             <input class="form-control" type="text" id="menteePermanentState" placeholder="Select State" required>
@@ -174,7 +174,7 @@
           </div>
         </div>
         <div class="form-row my-3">
-          <div class="col">
+          <div class="col-12">
             <label for="menteeExpectations">What are your expectations from the program?</label>
             <br>
             <textarea name="menteeExpectations" id="menteeExpectations" cols="70" rows="10"
@@ -182,7 +182,7 @@
           </div>
         </div>
         <div class="form-row my-3">
-          <div class="col">
+          <div class="col-12">
             <label for="menteeTakeaways">By the end of the program, what are the few takeaways that you would want from
               this program?</label>
             <br>
@@ -191,18 +191,22 @@
           </div>
         </div>
         <div class="form-row my-3">
-          <div class="col">
+          <div class="col-12">
             <label for="menteeChangeWorld">What is that one thing that you would like to change in the world?</label>
             <br>
             <textarea name="menteeChangeWorld" id="menteeChangeWorld" cols="70" rows="10"
               placeholder="Write your expectations here..."></textarea>
           </div>
         </div>
+        <div class="form-row my-3">
+          <button type="submit" class="btn btn-primary mx-4">Submit</button>
+          <button type="reset" class="btn btn-danger">Reset All Fields</button>
+        </div>
       </form>
       <!-- TODO: Complete -->
       <form action="">
         <div class="form-row my-3">
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Nomination:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
@@ -211,7 +215,7 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Do you have any Work Experience?:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
@@ -220,8 +224,8 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-          <div class="col">
-            <label for="menteePVTG">Have you recieved any Award?:</label><br>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteePVTG">Have you received any Award?:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
               <input class="form-control mx-2" type="radio" id="menteePVTGYes" name="menteePVTG" required>
@@ -229,9 +233,7 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-        </div>
-        <div class="form-row my-3">
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Are you differently abled?:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
@@ -240,7 +242,7 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Are you a member of any Self Help Group (SHG)?:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
@@ -249,66 +251,6 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-        </div>
-        <div class="form-row my-3">
-          <div class="col">
-            <label for="menteeGender">Access to Technology:</label>
-            <select class="form-control is-valid" id="menteeGender" required>
-              <option value="selectGender" disabled default>Choose Your Gender</option>
-              <option value="maleGender">Male</option>
-              <option value="femaleGender">Female</option>
-              <option value="otherGender">Other</option>
-              <option value="notMentionedGender">Prefer Not To Say</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="menteeGender">Annual Family Income:</label>
-            <select class="form-control is-valid" id="menteeGender" required>
-              <option value="selectGender" disabled default>Choose Your Gender</option>
-              <option value="maleGender">Male</option>
-              <option value="femaleGender">Female</option>
-              <option value="otherGender">Other</option>
-              <option value="notMentionedGender">Prefer Not To Say</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="menteeFirstName">Name of Tribe:</label>
-            <input class="form-control" type="text" id="menteeFirstName" placeholder="Enter your First Name" required>
-          </div>
-        </div>
-        <div class="form-row my-3">
-          <div class="col">
-            <label for="menteeGender">Language Choice 1:</label>
-            <select class="form-control is-valid" id="menteeGender" required>
-              <option value="selectGender" disabled default>Choose Your Gender</option>
-              <option value="maleGender">Male</option>
-              <option value="femaleGender">Female</option>
-              <option value="otherGender">Other</option>
-              <option value="notMentionedGender">Prefer Not To Say</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="menteeGender">Language Choice 2:</label>
-            <select class="form-control is-valid" id="menteeGender" required>
-              <option value="selectGender" disabled default>Choose Your Gender</option>
-              <option value="maleGender">Male</option>
-              <option value="femaleGender">Female</option>
-              <option value="otherGender">Other</option>
-              <option value="notMentionedGender">Prefer Not To Say</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="menteeGender">Language Choice 3:</label>
-            <select class="form-control is-valid" id="menteeGender" required>
-              <option value="selectGender" disabled default>Choose Your Gender</option>
-              <option value="maleGender">Male</option>
-              <option value="femaleGender">Female</option>
-              <option value="otherGender">Other</option>
-              <option value="notMentionedGender">Prefer Not To Say</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row my-3">
           <div class="col">
             <label for="menteeGender">Educational Qualification:</label>
             <select class="form-control is-valid" id="menteeGender" required>
@@ -321,7 +263,65 @@
           </div>
         </div>
         <div class="form-row my-3">
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
+            <label for="menteeGender">Access to Technology:</label>
+            <select class="form-control is-valid" id="menteeGender" required>
+              <option value="selectGender" disabled default>Choose Your Gender</option>
+              <option value="maleGender">Male</option>
+              <option value="femaleGender">Female</option>
+              <option value="otherGender">Other</option>
+              <option value="notMentionedGender">Prefer Not To Say</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteeGender">Annual Family Income:</label>
+            <select class="form-control is-valid" id="menteeGender" required>
+              <option value="selectGender" disabled default>Choose Your Gender</option>
+              <option value="maleGender">Male</option>
+              <option value="femaleGender">Female</option>
+              <option value="otherGender">Other</option>
+              <option value="notMentionedGender">Prefer Not To Say</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteeFirstName">Name of Tribe:</label>
+            <input class="form-control" type="text" id="menteeFirstName" placeholder="Enter your First Name" required>
+          </div>
+        </div>
+        <div class="form-row my-3">
+          <div class="col-md-6 col-lg-4">
+            <label for="menteeGender">Language Choice 1:</label>
+            <select class="form-control is-valid" id="menteeGender" required>
+              <option value="selectGender" disabled default>Choose Your Gender</option>
+              <option value="maleGender">Male</option>
+              <option value="femaleGender">Female</option>
+              <option value="otherGender">Other</option>
+              <option value="notMentionedGender">Prefer Not To Say</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteeGender">Language Choice 2:</label>
+            <select class="form-control is-valid" id="menteeGender" required>
+              <option value="selectGender" disabled default>Choose Your Gender</option>
+              <option value="maleGender">Male</option>
+              <option value="femaleGender">Female</option>
+              <option value="otherGender">Other</option>
+              <option value="notMentionedGender">Prefer Not To Say</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteeGender">Language Choice 3:</label>
+            <select class="form-control is-valid" id="menteeGender" required>
+              <option value="selectGender" disabled default>Choose Your Gender</option>
+              <option value="maleGender">Male</option>
+              <option value="femaleGender">Female</option>
+              <option value="otherGender">Other</option>
+              <option value="notMentionedGender">Prefer Not To Say</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row my-3">
+          <div class="col-md-6">
             <label for="menteeGender">Area of Interest:</label>
             <select class="form-control is-valid" id="menteeGender" required>
               <option value="selectGender" disabled default>Choose Your Gender</option>
@@ -331,7 +331,7 @@
               <option value="notMentionedGender">Prefer Not To Say</option>
             </select>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <label for="menteeGender">Sub Category:</label>
             <select class="form-control is-valid" id="menteeGender" required>
               <option value="selectGender" disabled default>Choose Your Gender</option>
@@ -343,7 +343,7 @@
           </div>
         </div>
         <div class="form-row my-3">
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Loan availed from NSTFDC or MUDRA(Attach Certificate):</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
@@ -352,7 +352,7 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Do you have a Bank Account?:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
@@ -361,8 +361,26 @@
               <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-lg-4">
             <label for="menteePVTG">Does your village have access to Mobile Internet?:</label><br>
+            <div class="form-check form-check-inline">
+              <label for="menteePVTGYes">Yes</label>
+              <input class="form-control mx-2" type="radio" id="menteePVTGYes" name="menteePVTG" required>
+              <label for="menteePVTGNo">No</label>
+              <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteePVTG">Has any family member enrolled in the same program?:</label><br>
+            <div class="form-check form-check-inline">
+              <label for="menteePVTGYes">Yes</label>
+              <input class="form-control mx-2" type="radio" id="menteePVTGYes" name="menteePVTG" required>
+              <label for="menteePVTGNo">No</label>
+              <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label for="menteePVTG">Are you Employed?:</label><br>
             <div class="form-check form-check-inline">
               <label for="menteePVTGYes">Yes</label>
               <input class="form-control mx-2" type="radio" id="menteePVTGYes" name="menteePVTG" required>
@@ -372,24 +390,8 @@
           </div>
         </div>
         <div class="form-row my-3">
-          <div class="col">
-            <label for="menteePVTG">Has any family member enrolled in the same program?:</label><br>
-            <div class="form-check form-check-inline">
-              <label for="menteePVTGYes">Yes</label>
-              <input class="form-control mx-2" type="radio" id="menteePVTGYes" name="menteePVTG" required>
-              <label for="menteePVTGNo">No</label>
-              <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
-            </div>
-          </div>
-          <div class="col">
-            <label for="menteePVTG">Are you Employed?:</label><br>
-            <div class="form-check form-check-inline">
-              <label for="menteePVTGYes">Yes</label>
-              <input class="form-control mx-2" type="radio" id="menteePVTGYes" name="menteePVTG" required>
-              <label for="menteePVTGNo">No</label>
-              <input class="form-control mx-2" type="radio" id="menteePVTGNo" name="menteePVTG" required>
-            </div>
-          </div>
+          <button type="submit" class="btn btn-primary mx-4">Submit</button>
+          <button type="reset" class="btn btn-danger">Reset All Fields</button>
         </div>
       </form>
       <!-- TODO: Make all File Upload Inputs -->
