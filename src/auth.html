@@ -2,14 +2,62 @@
 <html lang="en">
 
 <head>
+  <!-- SEO -->
+  <!-- TODO: Add SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login | SignUp</title>
+  <title>Login | Josh Talks - GOAL</title>
+
+  <!-- Fonts, CSS & Other Assets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="container-fluid" style="width: 60vw">
+    <form action="">
+      <div class="form-row my-3">
+        <div class="col">
+          <label for="loginUsername"><b>Username</b></label>
+          <input type="text" placeholder="Enter your Username" name="loginUsername" required>
+        </div>
+      </div>
+      <div class="form-row my-3">
+        <div class="col">
+          <label for="loginPassword"><b>Password</b></label>
+          <input type="password" placeholder="Enter your Password" name="loginPassword" required>
+        </div>
+      </div>
+      <div class="form-row my-3">
+        <div class="col">
+          <button type="btn btn-primary">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      </div>
+    </form>
+    <!-- TODO: Configure Signup to move to apply-*.html -->
+    <div class="text-secondary">
+      Don't have an account,<br>
+      <a href="apply-mentee.html">Click Here</a> to Apply as a Mentee<br>
+      <a href="apply-mentor.html">Click Here</a> to Apply as a Mentor<br>
+    </div>
+  </div>
 
+  <!-- External JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
