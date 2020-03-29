@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- SEO -->
+  <!-- TODO: Add SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frequently Asked Questions | Mentee's</title>
+
+  <!-- Fonts, CSS & Other Assets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/form-project/src/css/style.css">
+  <link rel="stylesheet" href="/form-project/src/css/contact.css">
+  <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <!-- Navbar Section -->
+
+
+  <section class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-dark" style="height: 50px">
+      <div class="container-fluid my-auto">
+        <ul class="navbar-nav float-left ml-3">
+          <li class="navbar-item">
+            <a class="nav-link h6" style="color: black; font-size: 0.9rem" href="https://www.india.gov.in/"
+              target="_blank">
+              <strong>GOVERNMENT OF INDIA</strong>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link h6" style="color: black; font-size: 0.9rem" href="https://tribal.nic.in/"
+              target="_blank">
+              <strong>MINISTRY OF TRIBAL AFFAIRS</strong>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav float-right mr-3">
+          <li class="navbar-item lead h6 px-2">
+            <button class="btn btn-primary btn-sm rounded-pill"><strong>&emsp;Check Status&emsp;</strong></button>
+          </li>
+          <li class="navbar-item lead h6 px-2">
+            <button class="btn btn-primary btn-sm rounded-pill"><strong>&emsp;Login&emsp;</strong></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom border-dark">
+      <div class="container-fluid d-inline">
+        <a class="navbar-brand float-left" href="/form-project/src/index.html">
+          <img src="/form-project/src/img/navbar-logo.jpg" alt="Josh Talks - GOAL Logo" height="70px">
+        </a>
+        <a class="navbar-brand float-right" href="https://tribal.nic.in/" target="_blank">
+          <img src="/form-project/src/img/navbar-logo-mta.jpg" alt="Ministry of Tribal Affairs Logo" height="70px">
+        </a>
+        <!-- Fix Facebook Gif Not Working -->
+        <a class="navbar-brand float-right" href="https://facebook.com/" target="_blank">
+          <img src="/form-project/src/img/navbar-logo-fb.jpg" alt="Facebook Gif" height="70px">
+        </a>
+      </div>
+    </nav>
+    <!-- Solve Navbar Hover Color Issue -->
+    <!-- Add border-bottom for all cases in no hover it will remain blue while on hover it turns green -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-color-blue" style="height: 90px">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="navbar-nav mx-auto">
+            <li class="navbar-item nav3-item">
+              <a class="nav-link mx-3 h5" href="/form-project/src/index.html" style="color: white; font-size: 1.05rem">
+                Home
+              </a>
+            </li>
+            <li class="navbar-item dropdown nav3-item">
+              <a class="nav-link dropdown-toggle mx-3 h5" href="#" style="color: white; font-size: 1.05rem"
+                id="aboutDropdown" data-toggle="dropdown">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="/form-project/src/about/ministry.html">Ministry</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/about/facebook.html">Facebook</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/about/program.html">The Program</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown nav3-item">
+              <a class="nav-link dropdown-toggle mx-3 h5" href="#" style="color: white; font-size: 1.05rem"
+                id="menteeDropdown" data-toggle="dropdown">
+                Apply as a Mentee
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menteeDropdown">
+                <a class="dropdown-item" href="/form-project/src/mentee/faq.html">FAQs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/mentee/form.html">Registration Form</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown nav3-item">
+              <a class="nav-link dropdown-toggle mx-3 h5" href="#" style="color: white; font-size: 1.05rem"
+                id="mentorDropdown" data-toggle="dropdown">
+                Apply as a Mentor
+              </a>
+              <div class="dropdown-menu" aria-labelledby="mentorDropdown">
+                <a class="dropdown-item" href="/form-project/src/mentor/faq.html">FAQs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/mentor/form.html">Registration Form</a>
+              </div>
+            </li>
+            <li class="navbar-item nav3-item">
+              <a class="nav-link mx-3 h5" href="/form-project/src/knowledge-portal.html"
+                style="color: white; font-size: 1.05rem">
+                Knowledge Portal
+              </a>
+            </li>
+            <li class="navbar-item nav3-item">
+              <a class="nav-link mx-3 h5" href="/form-project/src/contact.html"
+                style="color: white; font-size: 1.05rem">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- Masthead Section -->
+
+
+  <section style="margin-top: 236.8px">
+    <div class="container-fluid masthead"></div>
+  </section>
+
+
+  <!-- Contact Form Section | TODO: Add form action -->
+
+
+  <section>
+    <div class="container">
+      <br>
+      <p class="display-4 text-left"><strong>Contact Us</strong></p>
+      <div class="form-container mr-auto">
+        <form action="" method="post">
+          <div class="form-row my-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <label class="form-label" for="contactDepartment"><strong>Select A Department ↓</strong></label>
+              <select class="form-control" name="contactDepartment" id="formContactDepartment" required>
+                <option value="Choose A Department" selected disabled>Choose A Department</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">
+                  Dadra and Nagar Haveli and Daman and Diu
+                </option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerela">Kerela</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row my-4">
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+              <label class="form-label" for="contactFirstName"><strong>First Name:</strong></label>
+              <input class="form-control" type="text" name="contactFirstName" id="formContactFirstName"
+                placeholder="First Name" required>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+              <label class="form-label" for="contactLastName"><strong>Last Name:</strong></label>
+              <input class="form-control" type="text" name="contactLastName" id="formContactLastName"
+                placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-row my-4">
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+              <label class="form-label" for="contactEmailID"><strong>Email ID:</strong></label>
+              <input class="form-control" type="email" name="contactEmailID" id="formContactEmailID"
+                placeholder="Email ID" required>
+            </div>
+          </div>
+          <div class="form-row my-4">
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+              <label class="form-label" for="contactPhoneNumber"><strong>Phone Number:</strong></label>
+              <input class="form-control" type="text" name="contactPhoneNumber" id="formContactPhoneNumber"
+                placeholder="Phone Number" required>
+            </div>
+          </div>
+          <div class="form-row my-4">
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+              <label class="form-label" for="contactFeedback"><strong>Feedback:</strong></label>
+              <!-- 4000 = 250*15 + 250 for nbsp; -->
+              <textarea class="form-control" type="text" name="contactFeedback" id="formContactFeedback"
+                placeholder="Maximum 250 Words" maxlength="4000" required></textarea>
+            </div>
+          </div>
+          <div class="form-row my-4">
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3">
+              <button class="btn btn-secondary rounded" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer | TODO: Add Real Social Media Links -->
+
+
+  <footer class="bg-color-blue">
+    <div class="container-fluid">
+      <div class="row padding text-light">
+        <div class="col-12 text-center mt-4">
+          Copyright © 2020. All rights reserved.
+          <br>
+          Content Managed by Ministry of Tribal Affairs, Government of India.
+        </div>
+        <div class="col-12 text-center mt-3 mb-4" style="font-size: 0.8rem">
+          <a href="https://facebook.com/" class="mr-4"><i class="fab fa-facebook-f fa-2x text-light"></i></a>
+          <a href="https://twitter.com/" class="mr-4"><i class="fab fa-twitter fa-2x text-light"></i></a>
+          <a href="https://instagram.com/" class="mr-4"><i class="fab fa-instagram fa-2x text-light"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- External JS -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

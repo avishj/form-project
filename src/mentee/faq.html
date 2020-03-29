@@ -7,47 +7,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FAQ | Josh Talks - GOAL</title>
+  <title>Frequently Asked Questions | Mentee's</title>
 
   <!-- Fonts, CSS & Other Assets -->
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/form-project/src/css/style.css">
   <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/navbar-logo.jpg" alt="Josh Talks - GOAL Logo" height="70px"></a>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto mt-2">
+  <!-- Navbar Section -->
+
+
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-dark" style="height: 50px">
+      <div class="container-fluid my-auto">
+        <ul class="navbar-nav float-left ml-3">
           <li class="navbar-item">
-            <a class="nav-link h5" href="index.html"><u>Home</u></a>
+            <a class="nav-link h6" style="color: black; font-size: 0.9rem" href="https://www.india.gov.in/"
+              target="_blank">
+              <strong>GOVERNMENT OF INDIA</strong>
+            </a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link h5" href="apply-mentee.html"><u>Apply as a Mentee</u></a>
+            <a class="nav-link h6" style="color: black; font-size: 0.9rem" href="https://tribal.nic.in/"
+              target="_blank">
+              <strong>MINISTRY OF TRIBAL AFFAIRS</strong>
+            </a>
           </li>
-          <li class="navbar-item">
-            <a class="nav-link h5" href="apply-mentor.html"><u>Apply as a Mentor</u></a>
+        </ul>
+        <ul class="navbar-nav float-right mr-3">
+          <li class="navbar-item lead h6 px-2">
+            <button class="btn btn-primary btn-sm rounded-pill"><strong>&emsp;Check Status&emsp;</strong></button>
           </li>
-          <li class="navbar-item active">
-            <a class="nav-link h5" href="faq.html"><u>FAQ</u></a>
+          <li class="navbar-item lead h6 px-2">
+            <button class="btn btn-primary btn-sm rounded-pill"><strong>&emsp;Login&emsp;</strong></button>
           </li>
         </ul>
       </div>
-      <button class="btn btn-primary rounded-pill ml-3"><a class="text-light h5 text-decoration-none" href="auth.html">
-          <strong>Login | Signup</strong></a>
-      </button>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-  <!-- FAQs for Mentee's Section -->
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom border-dark">
+      <div class="container-fluid d-inline">
+        <a class="navbar-brand float-left" href="/form-project/src/index.html">
+          <img src="/form-project/src/img/navbar-logo.jpg" alt="Josh Talks - GOAL Logo" height="70px">
+        </a>
+        <a class="navbar-brand float-right" href="https://tribal.nic.in/" target="_blank">
+          <img src="/form-project/src/img/navbar-logo-mta.jpg" alt="Ministry of Tribal Affairs Logo" height="70px">
+        </a>
+        <!-- Fix Facebook Gif Not Working -->
+        <a class="navbar-brand float-right" href="https://facebook.com/" target="_blank">
+          <img src="/form-project/src/img/navbar-logo-fb.jpg" alt="Facebook Gif" height="70px">
+        </a>
+      </div>
+    </nav>
+    <!-- Solve Navbar Hover Color Issue -->
+    <!-- Add border-bottom for all cases in no hover it will remain blue while on hover it turns green -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-color-blue" style="height: 90px">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="navbar-nav mx-auto">
+            <li class="navbar-item nav3-item">
+              <a class="nav-link mx-3 h5" href="/form-project/src/index.html" style="color: white; font-size: 1.05rem">
+                Home
+              </a>
+            </li>
+            <li class="navbar-item dropdown nav3-item">
+              <a class="nav-link dropdown-toggle mx-3 h5" href="#" style="color: white; font-size: 1.05rem"
+                id="aboutDropdown" data-toggle="dropdown">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="/form-project/src/about/ministry.html">Ministry</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/about/facebook.html">Facebook</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/about/program.html">The Program</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown nav3-item">
+              <a class="nav-link dropdown-toggle mx-3 h5" href="#" style="color: white; font-size: 1.05rem"
+                id="menteeDropdown" data-toggle="dropdown">
+                Apply as a Mentee
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menteeDropdown">
+                <a class="dropdown-item" href="/form-project/src/mentee/faq.html">FAQs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/mentee/form.html">Registration Form</a>
+              </div>
+            </li>
+            <li class="navbar-item dropdown nav3-item">
+              <a class="nav-link dropdown-toggle mx-3 h5" href="#" style="color: white; font-size: 1.05rem"
+                id="mentorDropdown" data-toggle="dropdown">
+                Apply as a Mentor
+              </a>
+              <div class="dropdown-menu" aria-labelledby="mentorDropdown">
+                <a class="dropdown-item" href="/form-project/src/mentor/faq.html">FAQs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/form-project/src/mentor/form.html">Registration Form</a>
+              </div>
+            </li>
+            <li class="navbar-item nav3-item">
+              <a class="nav-link mx-3 h5" href="/form-project/src/knowledge-portal.html"
+                style="color: white; font-size: 1.05rem">
+                Knowledge Portal
+              </a>
+            </li>
+            <li class="navbar-item nav3-item">
+              <a class="nav-link mx-3 h5" href="/form-project/src/contact.html"
+                style="color: white; font-size: 1.05rem">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- FAQs for Mentee's Section
+
+
   <div class="container-fluid">
     <br><br>
     <p class="display-4 text-center"><strong>FAQs for Mentee's</strong></p>
@@ -150,60 +236,13 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- FAQs for Mentor's Section -->
-  <div class="container-fluid">
-    <br>
-    <p class="display-4 text-center"><strong>FAQs for Mentor's</strong></p>
-    <div class="cards mx-auto" style="width: 60rem;">
-      <div class="card-body">
-        <div class="card-title" style="font-size: 0.8rem;">
-          <i class="fas fa-chevron-right fa-2x" data-toggle="collapse" data-target="#mentorFAQ1"></i>
-          <span class="h4" data-toggle="collapse" data-target="#mentorFAQ1">
-            &emsp;What is the minimum age qualification to become a mentor?</span>
-        </div>
-        <hr>
-        <div id="mentorFAQ1" class="collapse bg-light">
-          <small class="h6">
-            Minimum 18 years of age.</small>
-          <hr>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-title" style="font-size: 0.8rem;">
-          <i class="fas fa-chevron-right fa-2x" data-toggle="collapse" data-target="#mentorFAQ2"></i>
-          <span class="h4" data-toggle="collapse" data-target="#mentorFAQ2">
-            &emsp;How many hours will a mentor be required to devote in a week?</span>
-        </div>
-        <hr>
-        <div id="mentorFAQ2" class="collapse bg-light">
-          <small class="h6">
-            Domicile location is the place where you currently reside in.</small>
-          <hr>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="card-title" style="font-size: 0.8rem;">
-          <i class="fas fa-chevron-right fa-2x" data-toggle="collapse" data-target="#mentorFAQ3"></i>
-          <span class="h4" data-toggle="collapse" data-target="#mentorFAQ3">
-            &emsp;How will a mentee be appointed to a mentor?</span>
-        </div>
-        <div id="mentorFAQ3" class="collapse bg-light">
-          <small class="h6">
-            The Mentor-Mentee appointment will happen on the following parameters:
-            <br>
-            1) The Mentor and Mentee must be fluent in the same language.
-            <br>
-            2) There should be alignment of area of interests between the mentor and mentee. </small>
-          <hr>
-        </div>
-      </div>
-    </div>
-  </div>
+  </div> -->
 
-  <!-- Footer -->
-  <!-- TODO: Add Real Social Media Links -->
-  <footer class="bg-dark">
+
+  <!-- Footer | TODO: Add Real Social Media Links -->
+
+
+  <footer class="bg-color-blue fixed-bottom">
     <div class="container-fluid">
       <div class="row padding text-light">
         <div class="col-12 text-center mt-4">
@@ -219,7 +258,11 @@
       </div>
     </div>
   </footer>
+
+
   <!-- External JS -->
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
