@@ -1,2 +1,2 @@
-# Signup &amp; Form Project 
-Signup &amp; Form Project for CC
+# Clone of Josh Talks - Goal Website 
+Clone of https://joshtalks-goal.netlify.com/
